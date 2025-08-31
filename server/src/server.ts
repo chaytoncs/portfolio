@@ -1,14 +1,14 @@
-import express from 'express';
-import cors from 'cors';
-import { corsOptions } from './config/middleware/cors.config';
+import express from 'express'
+import cors from 'cors'
+import { corsOptions } from './config/middleware/cors.config'
 
-const app = express();
+const app = express()
 
 // Middleware
-app.use(cors(corsOptions));
+app.use(cors(corsOptions))
 
 app.get('/', (req, res) => {
-  res.send('Server is running');
-});
+  res.send('Server is running')
+})
 
-export default app;
+export default app
